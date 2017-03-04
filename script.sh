@@ -63,7 +63,7 @@ check_gce() {
 		json_value "provider" "gce"
 		json_value "hostname" $hostname
 		json_value "public_ipaddress" $public_ipv4
-		json_value "public_ipaddress" $private_ipv4
+		json_value "private_ipaddress" $private_ipv4
 		json_value "zone" $zone
 		json_value "id" $id
 		json_value "type" $machinetype false

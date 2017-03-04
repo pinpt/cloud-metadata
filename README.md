@@ -31,6 +31,20 @@ Example output for AWS (the actual output will be compressed on one line for eas
 }
 ```
 
+Example output for Google Cloud Engine (the actual output will be compressed on one line for easier parsing):
+
+```json
+{
+	"provider":"gce",
+	"hostname":"gce-test1.c.foo-9160.internal",
+	"public_ipaddress":"114.197.97.113",
+	"private_ipaddress":"11.128.0.2",
+	"zone":"us-central1-a",
+	"id":"9741257677298391091",
+	"type":"n1-standard-1"
+}
+```
+
 ## TODO
 
 These https://ahmetalpbalkan.com/blog/comparison-of-instance-metadata-services/ and http://priocept.com/2017/02/12/aws-ec2-vs-google-compute-engine-comparison-instance-metadata/ are helpful
