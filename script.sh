@@ -75,5 +75,6 @@ check_gce() {
 check_aws
 check_gce
 
-# if we get here, no provider found
-exit 1
+# if we get here, no provider found, just dump an empty object
+json_start
+json_end
