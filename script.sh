@@ -72,6 +72,25 @@ check_gce() {
 	fi
 }
 
+#
+# check for minikube
+#
+check_minikube() {
+	hostname=`hostname`
+	if [ "$hostname" = "minikube" ];
+	then
+		ipv4=`ip addr | grep eth1 | awk '{print $2}' | tail -n 1 | cut -f1  -d'/'`
+		json_start
+		json_value "provider" "minikube"
+		json_value "hostname" $hostname
+		json_value "public_ipaddress" $ipv4
+		json_value "private_ipaddress" $ipv4
+		json_end
+		exit 0
+	fi
+}
+
+check_minikube
 check_aws
 check_gce
 
