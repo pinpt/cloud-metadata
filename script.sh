@@ -84,7 +84,7 @@ check_minikube() {
 		json_value "provider" "minikube"
 		json_value "hostname" $hostname
 		json_value "public_ipaddress" $ipv4
-		json_value "private_ipaddress" $ipv4
+		json_value "private_ipaddress" $ipv4 false
 		json_end
 		exit 0
 	fi
