@@ -54,4 +54,4 @@ These https://ahmetalpbalkan.com/blog/comparison-of-instance-metadata-services/ 
 
 ## License
 
-Copyright (c) 2017 by A Pinpoint PBC. Licensed under the MIT License
+Copyright (c) 2018 PinPT, Inc. Licensed under the MIT License
